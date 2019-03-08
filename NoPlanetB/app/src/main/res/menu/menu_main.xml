@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.a21745694.noplanetb.BMain">
+
+    <item
+        android:icon="@drawable/star"
+        android:title="Item"
+        app:showAsAction="always" />
+
+    <item
+        android:icon="@drawable/menu"
+        android:title="Item"
+        app:showAsAction="always" />
+</menu>

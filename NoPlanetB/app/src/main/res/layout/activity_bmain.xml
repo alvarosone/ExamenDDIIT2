@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/planetearth"
+    tools:context=".BMain">
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/imgLogoM"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginBottom="18dp"
+        android:src="@drawable/rocketlogo"
+        app:civ_border_color="#EEE"
+        app:civ_border_width="0dp"
+        app:civ_shadow="true"
+        app:civ_shadow_color="#FFF"
+        app:civ_shadow_radius="0" />
+
+    <TextView
+        android:id="@+id/tvMain"
+        style="@style/tvMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imgLogoM"
+        android:layout_marginStart="21dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="6dp"
+        android:layout_toEndOf="@+id/imgLogoM"
+        android:layout_toRightOf="@+id/imgLogoM" />
+
+    <RelativeLayout
+        android:id="@+id/rlScrim"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="209dp"
+        android:background="#FFFFFF"
+        android:gravity="bottom">
+
+        <Button
+            android:id="@+id/btnLeave"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="34dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/b_button"
+            android:text="@string/btn_leave"
+            android:textColor="#216FED" />
+
+        <Button
+            android:id="@+id/btnStay"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="44dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/a_button"
+            android:text="@string/btn_stay"
+            android:textColor="#FFFFFF" />
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/myswipe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="@string/tv_scrim"
+                android:textColor="@android:color/black"
+                android:textSize="16dp" />
+
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

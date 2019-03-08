@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/planetearth"
+    tools:context=".BLogin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="44dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/img"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/rocketlogo"
+            app:civ_border_color="#EEE"
+            app:civ_border_width="0dp"
+            app:civ_shadow="true"
+            app:civ_shadow_color="#FFF"
+            app:civ_shadow_radius="0" />
+
+        <TextView
+            android:id="@+id/tvTitulo"
+            android:textSize="30dp"
+            style="@style/titulo" />
+
+        <EditText
+            android:id="@+id/etUsuario"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/et"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/et_user"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/et"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/et_pswd"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/a_button"
+            android:text="@string/btn_entrar"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/tvSubtitulo"
+            android:layout_marginTop="40dp"
+            style="@style/slogan" />
+
+    </LinearLayout>
+</RelativeLayout>

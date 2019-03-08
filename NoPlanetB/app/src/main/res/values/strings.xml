@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">NoPlanetB</string>
+    <string name="slogan">too late for leaving...</string>
+    <string name="titulo">No Planet B</string>
+    <string name="btn_entrar">entrar</string>
+    <string name="et_user">Usuario</string>
+    <string name="et_pswd">Contraseña</string>
+    <string name="btn_leave">leave</string>
+    <string name="btn_stay">stay</string>
+    <string name="tv_scrim">The planet needs your help!</string>
+</resources>
